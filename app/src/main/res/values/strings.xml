@@ -1,0 +1,198 @@
+<resources>
+    <string name="app_name">Plant Green Care</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Início</string>
+    <string name="nav_plants">Minhas plantas</string>
+    <string name="nav_care">Cuidados</string>
+    <string name="nav_settings">Configurações</string>
+
+    <!-- General Actions -->
+    <string name="action_add_plant">Adicionar planta</string>
+    <string name="action_edit_plant">Editar planta</string>
+    <string name="action_delete_plant">Excluir planta</string>
+    <string name="action_register_care">Registrar cuidado</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="action_share">Compartilhar</string>
+    <string name="action_search">Pesquisar</string>
+    <string name="action_filter">Filtrar</string>
+    <string name="action_view_details">Ver detalhes</string>
+    <string name="action_take_photo">Tirar foto</string>
+    <string name="action_pick_photo">Selecionar da galeria</string>
+    <string name="action_remove_photo">Remover foto</string>
+
+    <!-- Statuses -->
+    <string name="status_up_to_date">Em dia</string>
+    <string name="status_pending">Pendente</string>
+    <string name="status_overdue">Atrasado</string>
+    <string name="status_completed">Concluído</string>
+
+    <!-- Home Screen -->
+    <string name="home_greeting">Olá! Vamos cuidar das suas plantas?</string>
+    <string name="home_stat_total_plants">Minhas plantas</string>
+    <string name="home_stat_today_care">Cuidados de hoje</string>
+    <string name="home_stat_overdue_care">Cuidados atrasados</string>
+    <string name="home_section_next_care">Próximo cuidado</string>
+    <string name="home_section_today_care">Cuidados de hoje</string>
+    <string name="home_no_care_today">Nenhum cuidado pendente para hoje! Suas plantas estão felizes 🌱</string>
+    <string name="home_no_plants_yet">Você ainda não tem plantas cadastradas.</string>
+
+    <!-- Plants Screen & Filters -->
+    <string name="plants_title">Minhas plantas</string>
+    <string name="plants_search_hint">Pesquisar planta ou local...</string>
+    <string name="filter_all">Todas</string>
+    <string name="filter_needs_care">Precisam de cuidados</string>
+    <string name="filter_overdue">Cuidados atrasados</string>
+    <string name="filter_up_to_date">Cuidados em dia</string>
+    <string name="plants_empty_message">Nenhuma planta cadastrada.</string>
+    <string name="plants_empty_filter">Nenhuma planta encontrada para este filtro.</string>
+    <string name="label_last_care">Último cuidado:</string>
+    <string name="label_next_care">Próximo cuidado:</string>
+
+    <!-- Add/Edit Plant Screen -->
+    <string name="add_plant_title">Adicionar planta</string>
+    <string name="edit_plant_title">Editar planta</string>
+    <string name="field_name">Nome da planta *</string>
+    <string name="field_scientific_name">Nome científico</string>
+    <string name="field_location">Local (ex: Sala, Varanda)</string>
+    <string name="field_acquisition_date">Data de aquisição</string>
+    <string name="field_observations">Observações</string>
+    <string name="field_light_level">Luminosidade</string>
+    <string name="field_humidity_level">Umidade</string>
+    <string name="header_care_config">Configuração dos Cuidados</string>
+    <string name="watering_label">Rega</string>
+    <string name="fertilizing_label">Adubação</string>
+    <string name="pruning_label">Poda</string>
+    <string name="frequency_label">Frequência</string>
+    <string name="plant_saved_success">Planta salva com sucesso!</string>
+    <string name="error_name_required">O nome da planta é obrigatório.</string>
+    <string name="error_invalid_date">Data inválida.</string>
+
+    <!-- Light & Humidity Options -->
+    <string name="light_low">Pouca luz</string>
+    <string name="light_indirect">Luz indireta</string>
+    <string name="light_bright_indirect">Luz intensa indireta</string>
+    <string name="light_direct">Luz direta</string>
+
+    <string name="humidity_low">Baixa</string>
+    <string name="humidity_moderate">Moderada</string>
+    <string name="humidity_high">Alta</string>
+
+    <!-- Frequency Options -->
+    <string name="freq_daily">Diariamente (1 dia)</string>
+    <string name="freq_every_2_days">A cada 2 dias</string>
+    <string name="freq_every_3_days">A cada 3 dias</string>
+    <string name="freq_weekly">Semanalmente (7 dias)</string>
+    <string name="freq_every_15_days">A cada 15 dias</string>
+    <string name="freq_monthly">Mensalmente (30 dias)</string>
+    <string name="freq_custom">Personalizada</string>
+
+    <!-- Plant Details -->
+    <string name="details_title">Detalhes da planta</string>
+    <string name="details_next_cares">Próximos cuidados</string>
+    <string name="details_history">Histórico de cuidados</string>
+    <string name="details_no_history">Nenhum cuidado registrado ainda.</string>
+    <string name="delete_confirm_title">Excluir planta?</string>
+    <string name="delete_confirm_message">Todos os registros de cuidados associados a esta planta serão removidos. Essa ação não poderá ser desfeita.</string>
+    <string name="plant_deleted">Planta excluída com sucesso.</string>
+    <string name="plant_delete_undo">Desfazer</string>
+
+    <!-- Register Care Dialog / Screen -->
+    <string name="register_care_title">Registrar cuidado</string>
+    <string name="care_type_watering">Rega</string>
+    <string name="care_type_fertilizing">Adubação</string>
+    <string name="care_type_pruning">Poda</string>
+    <string name="care_type_sunlight">Exposição à luz</string>
+    <string name="care_type_spraying">Pulverização</string>
+    <string name="care_type_other">Outro</string>
+    <string name="care_registered_success">Cuidado registrado com sucesso!</string>
+    <string name="field_care_notes">Observações do cuidado</string>
+
+    <!-- Care Screen -->
+    <string name="care_title">Cuidados</string>
+    <string name="care_filter_today">Hoje</string>
+    <string name="care_filter_tomorrow">Amanhã</string>
+    <string name="care_filter_week">Esta semana</string>
+    <string name="care_filter_overdue">Atrasados</string>
+    <string name="care_filter_all">Todos</string>
+    <string name="care_empty_list">Nenhum cuidado encontrado para este período.</string>
+    <string name="overdue_days_format">Atrasada há %1$d dia(s)</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Configurações</string>
+    <string name="settings_notifications_title">Notificações</string>
+    <string name="settings_enable_notifications">Ativar notificações</string>
+    <string name="settings_reminder_time">Horário dos lembretes</string>
+    <string name="settings_appearance_title">Aparência</string>
+    <string name="settings_theme_system">Seguir sistema</string>
+    <string name="settings_theme_light">Modo claro</string>
+    <string name="settings_theme_dark">Modo escuro</string>
+    <string name="settings_data_title">Dados e Backup</string>
+    <string name="settings_export_data">Exportar dados (JSON)</string>
+    <string name="settings_import_data">Importar dados</string>
+    <string name="settings_accessibility_title">Acessibilidade</string>
+    <string name="settings_high_contrast">Alto contraste</string>
+    <string name="settings_vibration">Feedback por vibração</string>
+    <string name="settings_about_title">Sobre</string>
+    <string name="settings_app_info">Plant Green Care v1.0\nAplicativo acadêmico para gestão de plantas.</string>
+    <string name="settings_privacy_policy">Política de Privacidade</string>
+
+    <!-- Meta / Social Integration -->
+    <string name="meta_share_title">Compartilhar planta</string>
+    <string name="meta_share_facebook">Compartilhar no Facebook</string>
+    <string name="meta_share_instagram">Compartilhar no Instagram</string>
+    <string name="meta_share_text_template">🌱 Conheça minha planta: %1$s (%2$s)!\nLocal: %3$s\nCuidada com carinho no Plant Green Care.</string>
+
+    <!-- Offline message -->
+    <string name="offline_notice">Você está offline. As funções básicas continuam disponíveis.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Pular</string>
+    <string name="onboarding_next">Continuar</string>
+    <string name="onboarding_start">Começar</string>
+    <string name="onboarding_first_plant">Adicionar minha primeira planta</string>
+    <string name="onboarding_title_1">Bem-vindo ao Plant Green Care 🌱</string>
+    <string name="onboarding_desc_1">Organize os cuidados das suas plantas de forma simples e natural.</string>
+    <string name="onboarding_title_2">Cadastre suas plantas</string>
+    <string name="onboarding_desc_2">Registre suas plantas com fotos, nomes, locais e acompanhe cada detalhe.</string>
+    <string name="onboarding_title_3">Não esqueça dos cuidados</string>
+    <string name="onboarding_desc_3">Receba lembretes automáticos para regar, adubar e podar no tempo certo.</string>
+    <!-- Multi-plant add & limit up to 20 -->
+    <string name="action_add_name_to_list">Adicionar</string>
+    <string name="plant_names_counter_format">Plantas na lista: %1$d de %2$d</string>
+    <string name="plant_name_hint_multi">Digite o nome da planta...</string>
+    <string name="error_max_plants_reached">Limite de 20 plantas atingido nesta adição!</string>
+    <string name="error_plant_name_already_added">Esta planta já está na lista.</string>
+    <string name="toast_max_plants_reached">Limite máximo de 20 plantas atingido nesta adição!</string>
+    <string name="toast_plant_name_duplicate">Esta planta já está adicionada na lista.</string>
+    <string name="plant_counter_format">%1$d de %2$d adicionadas</string>
+    <string name="toast_multiple_plants_saved">%1$d plantas cadastradas com sucesso!</string>
+    <string name="details_no_schedules">Nenhum cuidado configurado para esta planta.</string>
+    <string name="label_plants_to_add">Plantas a cadastrar no lote (máx. 20):</string>
+
+    <!-- Google Toxicity & Info Search -->
+    <string name="toxicity_section_title">Segurança &amp; Informações no Google</string>
+    <string name="toxicity_desc">Pesquise se a planta possui substâncias tóxicas ou risco de envenenamento para humanos, crianças e pets.</string>
+    <string name="btn_google_toxicity">Consultar Grau de Envenenamento / Toxicidade no Google</string>
+    <string name="btn_google_care_tips">Pesquisar Cuidados Recomendados no Google</string>
+
+    <!-- User Account & Login -->
+    <string name="settings_account_title">Conta &amp; Perfil do Usuário</string>
+    <string name="settings_account_guest">Modo Visitante (Offline)</string>
+    <string name="settings_account_guest_desc">Conecte sua conta com Google ou E-mail para identificar seus cuidados e plantas.</string>
+    <string name="settings_login_google">Entrar com Google</string>
+    <string name="settings_login_email">Entrar com E-mail</string>
+    <string name="settings_logout">Desconectar da conta</string>
+    <string name="settings_account_connected">Conta Conectada</string>
+    <string name="dialog_login_email_title">Entrar com E-mail</string>
+    <string name="dialog_login_name_hint">Seu nome ou apelido</string>
+    <string name="dialog_login_email_hint">Seu e-mail (ex: usuario@email.com)</string>
+    <string name="dialog_login_google_title">Entrar com Conta Google</string>
+    <string name="dialog_login_google_desc">Digite ou confirme o seu e-mail Google para vincular ao seu perfil do Plant Green Care:</string>
+    <string name="dialog_login_google_email_hint">seu_nome@gmail.com</string>
+    <string name="msg_login_success">Login realizado com sucesso! Bem-vindo(a), %1$s</string>
+    <string name="msg_logout_success">Sessão encerrada com sucesso.</string>
+    <string name="error_invalid_email">Por favor, insira um endereço de e-mail válido.</string>
+</resources>

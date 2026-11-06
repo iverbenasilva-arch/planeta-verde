@@ -1,0 +1,6 @@
+{
+  "name": "Plant Green Care",
+  "description": "Aplicativo completo para gerenciamento e cuidados de plantas com lembretes, histórico e acompanhamento inteligente.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

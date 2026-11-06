@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PlantGreenCare" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_green_light</item>
+        <item name="colorPrimaryVariant">@color/primary_green</item>
+        <item name="colorOnPrimary">#121212</item>
+
+        <item name="colorSecondary">@color/primary_green_light</item>
+        <item name="colorOnSecondary">#121212</item>
+
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/surface_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+        <item name="colorSurfaceVariant">@color/card_surface_dark</item>
+
+        <!-- Global High-Contrast Input Styling for Dark Mode -->
+        <item name="textInputStyle">@style/Widget.PlantGreenCare.TextInputLayout</item>
+        <item name="editTextStyle">@style/Widget.PlantGreenCare.TextInputEditText</item>
+    </style>
+</resources>

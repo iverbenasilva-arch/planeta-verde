@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cores Principais - Identidade Visual Plant Green Care -->
+    <color name="primary_green">#2E7D32</color>
+    <color name="primary_green_dark">#1B5E20</color>
+    <color name="primary_green_light">#4CAF50</color>
+    <color name="primary_green_ultra_light">#D6EBD8</color>
+    <color name="sage_light">#D6EBD8</color>
+    <color name="secondary_green">#2E6930</color>
+    <color name="accent_green">#388E3C</color>
+
+    <!-- Fundo de Conforto Óptico e Alta Legibilidade -->
+    <!-- Fundo suavemente pigmentado em verde sálvia botânico fosco (#E2E9E1) - elimina o branco ofuscante -->
+    <color name="background">#E2E9E1</color>
+    <color name="background_subtle">#DAE4D9</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="card_surface">#FFFFFF</color>
+    <color name="card_border">#B8CCBA</color>
+    <color name="divider">#C4D5C6</color>
+
+    <!-- Campos de Entrada (Input Text / TextInputLayout) - Visualização e Contraste Máximos -->
+    <color name="input_background">#FFFFFF</color>
+    <color name="input_stroke">#47654C</color>
+    <color name="input_stroke_focused">#1B5E20</color>
+    <color name="input_text">#111827</color>
+    <color name="input_cursor">#1B5E20</color>
+
+    <!-- Tipografia com Alto Contraste e Excelente Legibilidade -->
+    <color name="text_primary">#0E1A10</color>
+    <color name="text_secondary">#354837</color>
+    <color name="text_hint">#49614C</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Cores de Estado e Feedback -->
+    <color name="status_error">#C62828</color>
+    <color name="status_error_light">#FFEBEE</color>
+    <color name="status_warning">#E65100</color>
+    <color name="status_warning_light">#FFF3E0</color>
+    <color name="status_success">#2E7D32</color>
+    <color name="status_success_light">#E8F5E9</color>
+    <color name="status_pending">#1565C0</color>
+    <color name="status_pending_light">#E3F2FD</color>
+
+    <!-- Modo Escuro com alto contraste -->
+    <color name="background_dark">#121913</color>
+    <color name="surface_dark">#1C261D</color>
+    <color name="card_surface_dark">#222F24</color>
+    <color name="input_background_dark">#1F2B20</color>
+    <color name="input_stroke_dark">#5C7860</color>
+    <color name="text_primary_dark">#F4F9F4</color>
+    <color name="text_secondary_dark">#A4BAA5</color>
+    <color name="text_hint_dark">#839D85</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PlantGreenCare" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Brand Colors -->
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryVariant">@color/primary_green_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+
+        <item name="colorSecondary">@color/secondary_green</item>
+        <item name="colorOnSecondary">@color/text_on_primary</item>
+
+        <!-- Status & Navigation Bars -->
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Background & Surface -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/background_subtle</item>
+
+        <!-- Global High-Contrast Input Styling -->
+        <item name="textInputStyle">@style/Widget.PlantGreenCare.TextInputLayout</item>
+        <item name="editTextStyle">@style/Widget.PlantGreenCare.TextInputEditText</item>
+    </style>
+
+    <style name="Widget.PlantGreenCare.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeColor">@color/box_stroke_selector</item>
+        <item name="boxStrokeWidth">1.5dp</item>
+        <item name="boxStrokeWidthFocused">2.5dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="hintTextColor">@color/primary_green_dark</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="hintTextAppearance">@style/TextAppearance.PlantGreenCare.InputHint</item>
+    </style>
+
+    <style name="TextAppearance.PlantGreenCare.InputHint" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/primary_green_dark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.PlantGreenCare.TextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/input_text</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_green</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHighlight">#A5D6A7</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+</resources>

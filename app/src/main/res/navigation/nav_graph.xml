@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.plantgreencare.ui.home.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_addPlant"
+            app:destination="@id/addPlantFragment" />
+        <action
+            android:id="@+id/action_home_to_details"
+            app:destination="@id/plantDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_plants"
+        android:name="com.example.plantgreencare.ui.plants.PlantsFragment"
+        android:label="@string/nav_plants"
+        tools:layout="@layout/fragment_plants">
+        <action
+            android:id="@+id/action_plants_to_addPlant"
+            app:destination="@id/addPlantFragment" />
+        <action
+            android:id="@+id/action_plants_to_details"
+            app:destination="@id/plantDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_care"
+        android:name="com.example.plantgreencare.ui.care.CareFragment"
+        android:label="@string/nav_care"
+        tools:layout="@layout/fragment_care" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.plantgreencare.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/addPlantFragment"
+        android:name="com.example.plantgreencare.ui.plants.AddPlantFragment"
+        android:label="@string/add_plant_title"
+        tools:layout="@layout/fragment_add_plant">
+        <argument
+            android:name="plantId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/plantDetailsFragment"
+        android:name="com.example.plantgreencare.ui.plants.PlantDetailsFragment"
+        android:label="@string/details_title"
+        tools:layout="@layout/fragment_plant_details">
+        <argument
+            android:name="plantId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_details_to_edit"
+            app:destination="@id/addPlantFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.plantgreencare.ui.onboarding.OnboardingFragment"
+        android:label="Onboarding"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onboarding_to_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

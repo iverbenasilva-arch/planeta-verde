@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/surface">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_care_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_green_dark" />
+
+    <TextView
+        android:id="@+id/tv_dialog_plant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Planta: Jiboia"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary" />
+
+    <!-- Care Type Dropdown -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_care_type"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/box_stroke_selector"
+        app:boxStrokeWidth="1.5dp"
+        app:boxStrokeWidthFocused="2.5dp"
+        app:hintTextColor="@color/primary_green_dark"
+        app:endIconTint="@color/primary_green_dark"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/actv_care_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Tipo de cuidado"
+            android:inputType="none"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="14dp"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/text_hint"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Date selector -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_care_date"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:endIconDrawable="@drawable/ic_calendar"
+        app:endIconMode="custom"
+        app:endIconTint="@color/primary_green_dark"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/box_stroke_selector"
+        app:boxStrokeWidth="1.5dp"
+        app:boxStrokeWidthFocused="2.5dp"
+        app:hintTextColor="@color/primary_green_dark"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_care_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:focusable="false"
+            android:clickable="true"
+            android:hint="Data do cuidado"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="14dp"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/text_hint"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Notes field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_care_notes"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/box_stroke_selector"
+        app:boxStrokeWidth="1.5dp"
+        app:boxStrokeWidthFocused="2.5dp"
+        app:hintTextColor="@color/primary_green_dark"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_care_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/field_care_notes"
+            android:inputType="textCapSentences"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="14dp"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/text_hint"
+            android:textCursorDrawable="@drawable/cursor_green"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel_care"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/action_cancel"
+            android:textColor="@color/text_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_confirm_care"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/primary_green_dark"
+            android:textColor="@color/white"
+            android:text="@string/action_save" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,7 +1,6 @@
 package com.example.plantgreencare.ui.plants;
 
 import android.app.DatePickerDialog;
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -38,8 +37,6 @@ import com.google.android.material.materialswitch.MaterialSwitch;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -82,10 +79,6 @@ public class AddPlantFragment extends Fragment {
     private AutoCompleteTextView actvFertilizingFreq;
     private MaterialSwitch switchPruning;
     private AutoCompleteTextView actvPruningFreq;
-
-    // Google Toxicity & Care buttons
-    private MaterialButton btnSearchToxicityGoogle;
-    private MaterialButton btnSearchCareGoogle;
 
     private MaterialButton btnSave;
     private Uri selectedPhotoUri = null;
@@ -146,10 +139,6 @@ public class AddPlantFragment extends Fragment {
         actvFertilizingFreq = view.findViewById(R.id.actv_fertilizing_freq);
         switchPruning = view.findViewById(R.id.switch_pruning);
         actvPruningFreq = view.findViewById(R.id.actv_pruning_freq);
-
-        // Google
-        btnSearchToxicityGoogle = view.findViewById(R.id.btn_search_toxicity_google);
-        btnSearchCareGoogle = view.findViewById(R.id.btn_search_care_google);
 
         btnSave = view.findViewById(R.id.btn_save_plant);
 
@@ -250,16 +239,6 @@ public class AddPlantFragment extends Fragment {
             });
         }
 
-        // Google Toxicity Search
-        if (btnSearchToxicityGoogle != null) {
-            btnSearchToxicityGoogle.setOnClickListener(v -> performGoogleSearch(true));
-        }
-
-        // Google Care Tips Search
-        if (btnSearchCareGoogle != null) {
-            btnSearchCareGoogle.setOnClickListener(v -> performGoogleSearch(false));
-        }
-
         btnSave.setOnClickListener(v -> savePlant());
 
         ImageButton btnSaveToolbar = rootView.findViewById(R.id.btn_save_toolbar);
@@ -330,39 +309,6 @@ public class AddPlantFragment extends Fragment {
         }
         if (tvPlantsListLabel != null) {
             tvPlantsListLabel.setVisibility(plantNamesList.isEmpty() ? View.GONE : View.VISIBLE);
-        }
-    }
-
-    private void performGoogleSearch(boolean isToxicity) {
-        String plantName = "";
-        if (etName != null && etName.getText() != null && !etName.getText().toString().trim().isEmpty()) {
-            plantName = etName.getText().toString().trim();
-        } else if (!plantNamesList.isEmpty()) {
-            plantName = plantNamesList.get(0);
-        }
-
-        String query;
-        if (isToxicity) {
-            if (plantName.isEmpty()) {
-                query = "plantas toxicas venenosas para caes gatos criancas sintomas";
-            } else {
-                query = "planta " + plantName + " e toxica venenosa para humanos e animais de estimacao";
-            }
-        } else {
-            if (plantName.isEmpty()) {
-                query = "como cuidar de plantas em casa rega adubacao";
-            } else {
-                query = "como cuidar de " + plantName + " frequencia rega adubacao iluminacao ideal";
-            }
-        }
-
-        try {
-            String encodedQuery = URLEncoder.encode(query, "UTF-8");
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=" + encodedQuery));
-            startActivity(intent);
-        } catch (UnsupportedEncodingException e) {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=" + query));
-            startActivity(intent);
         }
     }
 

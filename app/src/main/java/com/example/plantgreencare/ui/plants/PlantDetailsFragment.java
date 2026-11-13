@@ -1,7 +1,5 @@
 package com.example.plantgreencare.ui.plants;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,8 +30,6 @@ import com.example.plantgreencare.viewmodel.PlantDetailsViewModel;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.imageview.ShapeableImageView;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.List;
 
 public class PlantDetailsFragment extends Fragment {
@@ -56,8 +52,6 @@ public class PlantDetailsFragment extends Fragment {
     private ImageButton btnEdit;
     private ImageButton btnDelete;
     private MaterialButton btnMainRegisterCare;
-    private MaterialButton btnDetailsGoogleToxicity;
-    private MaterialButton btnDetailsGoogleCare;
 
     private LinearLayout layoutSchedules;
     private RecyclerView rvHistory;
@@ -91,8 +85,6 @@ public class PlantDetailsFragment extends Fragment {
         btnEdit = view.findViewById(R.id.btn_edit_details);
         btnDelete = view.findViewById(R.id.btn_delete_details);
         btnMainRegisterCare = view.findViewById(R.id.btn_details_register_care);
-        btnDetailsGoogleToxicity = view.findViewById(R.id.btn_details_google_toxicity);
-        btnDetailsGoogleCare = view.findViewById(R.id.btn_details_google_care);
 
         layoutSchedules = view.findViewById(R.id.layout_schedules_container);
         rvHistory = view.findViewById(R.id.rv_care_history);
@@ -174,33 +166,6 @@ public class PlantDetailsFragment extends Fragment {
                 dialog.show(getParentFragmentManager(), "RegisterCareDetails");
             }
         });
-
-        if (btnDetailsGoogleToxicity != null) {
-            btnDetailsGoogleToxicity.setOnClickListener(v -> openGoogleSearch(true));
-        }
-
-        if (btnDetailsGoogleCare != null) {
-            btnDetailsGoogleCare.setOnClickListener(v -> openGoogleSearch(false));
-        }
-    }
-
-    private void openGoogleSearch(boolean isToxicity) {
-        String plantName = currentPlant != null && currentPlant.getName() != null ? currentPlant.getName() : "planta";
-        String query;
-        if (isToxicity) {
-            query = "planta " + plantName + " e toxica venenosa para humanos e animais de estimacao";
-        } else {
-            query = "como cuidar de " + plantName + " frequencia rega adubacao iluminacao ideal";
-        }
-
-        try {
-            String encodedQuery = URLEncoder.encode(query, "UTF-8");
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=" + encodedQuery));
-            startActivity(intent);
-        } catch (UnsupportedEncodingException e) {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=" + query));
-            startActivity(intent);
-        }
     }
 
     private void bindPlantData(PlantEntity plant) {

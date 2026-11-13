@@ -172,12 +172,6 @@
     <string name="details_no_schedules">Nenhum cuidado configurado para esta planta.</string>
     <string name="label_plants_to_add">Plantas a cadastrar no lote (máx. 20):</string>
 
-    <!-- Google Toxicity & Info Search -->
-    <string name="toxicity_section_title">Segurança &amp; Informações no Google</string>
-    <string name="toxicity_desc">Pesquise se a planta possui substâncias tóxicas ou risco de envenenamento para humanos, crianças e pets.</string>
-    <string name="btn_google_toxicity">Consultar Grau de Envenenamento / Toxicidade no Google</string>
-    <string name="btn_google_care_tips">Pesquisar Cuidados Recomendados no Google</string>
-
     <!-- User Account & Login -->
     <string name="settings_account_title">Conta &amp; Perfil do Usuário</string>
     <string name="settings_account_guest">Modo Visitante (Offline)</string>

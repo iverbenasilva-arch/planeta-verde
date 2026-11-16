@@ -1,0 +1,19 @@
+{
+  "project_info": {
+    "project_number": "1234567890",
+    "project_id": "plantgreencare",
+    "storage_bucket": "plantgreencare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1234567890:android:0000000000000000",
+        "android_client_info": {
+          "package_name": "com.aistudio.plantgreencare.vkywq"
+        }
+      },
+      "api_key": [{ "current_key": "AIzaSyDummyKeyForBuildOnly1234567890" }]
+    }
+  ],
+  "configuration_version": "1"
+}
